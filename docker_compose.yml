@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  # --- Section Wordpress ---
+  db_wp:
+    image: mysql:5.7
+    volumes:
+      - db_wp_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpresspassword
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+
+  wordpress:
+    depends_on:
+      - db_wp
+    image: wordpress:latest
+    ports:
+      - "8080:80" # Mapping demandé : Port 8080 sur la VM -> Port 80 conteneur
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db_wp:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+
+  # --- Section Zabbix ---
+  # Zabbix nécessite une base de données, un serveur et une interface web
+  zabbix-db:
+    image: postgres:13-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=zabbix
+      - POSTGRES_PASSWORD=zabbix
+      - POSTGRES_DB=zabbix
+    volumes:
+      - zabbix_db_data:/var/lib/postgresql/data
+
+  zabbix-server:
+    image: zabbix/zabbix-server-pgsql:latest
+    restart: always
+    ports:
+      - "10051:10051"
+    environment:
+      - DB_SERVER_HOST=zabbix-db
+      - POSTGRES_USER=zabbix
+      - POSTGRES_PASSWORD=zabbix
+      - POSTGRES_DB=zabbix
+    depends_on:
+      - zabbix-db
+
+  zabbix-web:
+    image: zabbix/zabbix-web-nginx-pgsql:latest
+    restart: always
+    ports:
+      - "8081:8080" # Mapping demandé : Port 8081 sur la VM -> Port 8080 conteneur
+    environment:
+      - ZBX_SERVER_HOST=zabbix-server
+      - DB_SERVER_HOST=zabbix-db
+      - POSTGRES_USER=zabbix
+      - POSTGRES_PASSWORD=zabbix
+      - POSTGRES_DB=zabbix
+    depends_on:
+      - zabbix-server
+
+volumes:
+  db_wp_data:
+  zabbix_db_data:
