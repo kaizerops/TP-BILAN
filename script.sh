@@ -46,5 +46,3 @@ docker --version
 docker compose version
 
 echo "--- Installation terminée ! ---"
-echo "Veuillez vous déconnecter et vous reconnecter pour que les droits de groupe soient pris en compte."
-set +x
