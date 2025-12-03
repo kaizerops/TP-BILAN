@@ -229,7 +229,7 @@ Les services sont accessibles depuis le navigateur via l'adresse IP de la VM :
 | `usermod -aG docker $USER`        | Ajoute ton utilisateur au groupe "docker".                                           |
 | `docker --version`                | Affiche la version installée.                                                            |
 
-### 2. Explication docker_compose.yml
+### 2. Explication docker-compose.yml
 
 | **Instruction / Clé**        | **Explication **                                                                                                                                              |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
