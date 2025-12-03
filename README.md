@@ -127,7 +127,7 @@ git clone https://github.com/kaizerops/TP-BILAN.git
 cd NOM_DU_REPO
 
 # 2. Rendre le script exécutable
-chmod +x install_docker.sh
+chmod +x script.sh
 
 # 3. Lancer l'installation
 ./script.sh
