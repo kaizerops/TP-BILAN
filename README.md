@@ -60,7 +60,6 @@
 
 ##  Architecture de la solution
 
-L'infrastructure repose sur une machine virtuelle Linux unique hébergeant deux stacks applicatives isolées :
 
 1. **Web (Wordpress)** :
     
