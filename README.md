@@ -36,9 +36,9 @@
 
 🐳 TP Bilan Intermédiaire SISR - Infrastructure Dockerisée
 
-##  Table des matières
+##  Sommaire
 
-1. [Contexte et Objectifs](#Contexte et Objectifs)
+1. [Contexte et Objectifs]
     
 2. [Architecture de la solution]
     
