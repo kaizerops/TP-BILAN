@@ -34,7 +34,7 @@
 <!-- ✂️ Saut de page pour le PDF -->
 <div style="page-break-after: always;"></div>
 
-🐳 TP Bilan Intermédiaire SISR - Infrastructure Dockerisée
+---
 
 ##  Sommaire
 
