@@ -224,9 +224,9 @@ Les services sont accessibles depuis le navigateur via l'adresse IP de la VM :
 | `curl ...                         | sudo gpg --dearmor ...`                                                                  |
 | `echo "deb ... signed-by..."`     | Ajoute l'adresse officielle de Docker à la liste des "magasins" d'applications de Linux. |
 | `sudo apt install docker-ce ...`  | Installe le moteur Docker (`ce`), la commande client (`cli`) et le plugin Compose.       |
-| `systemctl start docker`          | Démarre le logiciel Docker tout de suite.                                                |
+| `systemctl start docker`          | Démarre Docker.                                                |
 | `systemctl enable docker`         | Programme Docker pour qu'il s'allume tout seul au redémarrage du PC.                     |
-| `usermod -aG docker $USER`        | Ajoute ton utilisateur au groupe VIP "docker".                                           |
+| `usermod -aG docker $USER`        | Ajoute ton utilisateur au groupe "docker".                                           |
 | `docker --version`                | Affiche la version installée.                                                            |
 
 
