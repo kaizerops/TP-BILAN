@@ -2,8 +2,8 @@
 <div style="text-align: center; margin-top: 100px;">
 
   <!-- 🖼️ Logo principal au centre -->
-  <img src="<img width="1277" height="619" alt="image" src="https://github.com/user-attachments/assets/1b8bdf40-efad-4dcb-9222-777402a4f0a8" />
-" width="300" alt="Logo École">
+<img width="1277" height="619" alt="image" src="https://github.com/user-attachments/assets/1b8bdf40-efad-4dcb-9222-777402a4f0a8" />
+
 
   <!-- 🏫 Titre principal -->
   <h1 style="font-size: 38px; margin-top: 40px;">TP B2 - BILAN</h1>
@@ -11,11 +11,6 @@
 
   <!-- 🧰 Sous-titre -->
   <h2 style="font-size: 28px; margin-top: 10px;">DOCKER</h2>
-
-
-
-
-
 
 
   <!-- ✍️ Auteur et infos -->
