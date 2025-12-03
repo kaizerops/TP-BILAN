@@ -229,5 +229,17 @@ Les services sont accessibles depuis le navigateur via l'adresse IP de la VM :
 | `usermod -aG docker $USER`        | Ajoute ton utilisateur au groupe "docker".                                           |
 | `docker --version`                | Affiche la version installée.                                                            |
 
+### 2. Explication docker_compose.yml
 
+| **Instruction / Clé**        | **Explication **                                                                                                                                              |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `version: '3.8'`             | Indique la version de la syntaxe Docker Compose utilisée.                                                                                                     |
+| `services:`                  | Début de la liste des "machines" (conteneurs) que tu vas créer.                                                                                               |
+| `image: mysql:5.7`           | L'image à télécharger depuis le Docker Hub (le magasin d'applis).                                                                                             |
+| `volumes:` (dans un service) | `- db_wp_data:/var/lib/mysql`<br><br>  <br><br>Relie un dossier virtuel (à gauche) au dossier de stockage de la base de données dans le conteneur (à droite). |
+| `restart: always`            | Si le conteneur plante ou si le serveur redémarre, Docker le relance automatiquement.                                                                         |
+| `environment:`               | Liste des variables de configuration (Mots de passe, nom des bases, utilisateurs).                                                                            |
+| `depends_on:`                | `- db_wp`<br><br>  <br><br>Dit à Docker : "Attends que la base de données (`db_wp`) soit lancée avant de lancer WordPress".                                   |
+| `ports:`                     | `- "8080:80"`<br><br>  <br><br>**Gauche** : Port de ta machine réelle (Hôte).<br><br>  <br><br>**Droite** : Port interne du conteneur.                        |
+| `volumes:` (à la fin)        | Déclare les volumes nommés utilisés plus haut (`db_wp_data`, etc.) pour qu'ils soient gérés par Docker.                                                       |
 
