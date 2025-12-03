@@ -7,7 +7,7 @@
 
   <!-- 🏫 Titre principal -->
   <h1 style="font-size: 38px; margin-top: 40px;">TP B2 - BILAN</h1>
-	<hr style="width: 50%; margin: 20px auto; border: 1px solid #000;">
+	<hr style="width: 50%; margin: 20px auto;">
 
   <!-- 🧰 Sous-titre -->
   <h2 style="font-size: 28px; margin-top: 10px;">DOCKER</h2>
