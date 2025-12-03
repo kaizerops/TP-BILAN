@@ -218,10 +218,10 @@ Les services sont accessibles depuis le navigateur via l'adresse IP de la VM :
 
 ---
 
-Accès à Wordpress :
+**Accès à Wordpress :**
 <img width="1919" height="749" alt="image" src="https://github.com/user-attachments/assets/04b043fb-3129-4aa3-b36d-2eed0388d650" />
 
-Accès à Zabbix :
+**Accès à Zabbix :**
 <img width="1918" height="781" alt="image" src="https://github.com/user-attachments/assets/3c66643e-5eb3-4a59-8ad6-290e060d5b7f" />
 
 
