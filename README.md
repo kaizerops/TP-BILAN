@@ -101,7 +101,6 @@ Pour garantir la reproductibilité de l'environnement, l'installation de Docker 
 
 ### Fonctionnement du script
 
-Ce script effectue les actions suivantes séquentiellement :
 
 1. Mise à jour des dépôts système (`apt update`).
     
@@ -123,7 +122,7 @@ Bash
 ```
 # 1. Cloner le dépôt
 git clone https://github.com/kaizerops/TP-BILAN.git 
-cd NOM_DU_REPO
+cd TP-BILAN
 
 # 2. Rendre le script exécutable
 chmod +x script.sh
@@ -131,7 +130,6 @@ chmod +x script.sh
 # 3. Lancer l'installation
 ./script.sh
 
-# ⚠️ IMPORTANT : Se déconnecter et reconnecter pour appliquer les groupes utilisateurs.
 ```
 
 ---
@@ -196,12 +194,12 @@ _Le statut doit être `Up` pour les 5 conteneurs._
 
 ### 2. Accès Web
 
-Les services sont accessibles depuis le navigateur via l'adresse IP de la VM :
+Les services sont accessibles depuis le navigateur via l'adresse IP de la Machine :
 
 | **Service**   | **URL**                   | **Identifiants par défaut**        |
 | ------------- | ------------------------- | ---------------------------------- |
-| **Wordpress** | `http://IP_DE_LA_VM:8080` | _À définir à l'installation_       |
-| **Zabbix**    | `http://IP_DE_LA_VM:8081` | **User:** Admin / **Pass:** zabbix |
+| **Wordpress** | `http://IP_DE_LA_MACHINE:8080` | _À définir à l'installation_       |
+| **Zabbix**    | `http://IP_DE_LA_MACHINE:8081` | **User:** Admin / **Pass:** zabbix |
 
 ---
 
