@@ -130,7 +130,7 @@ cd NOM_DU_REPO
 chmod +x install_docker.sh
 
 # 3. Lancer l'installation
-./install_docker.sh
+./script.sh
 
 # ⚠️ IMPORTANT : Se déconnecter et reconnecter pour appliquer les groupes utilisateurs.
 ```
