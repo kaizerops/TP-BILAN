@@ -52,12 +52,10 @@
     
 7. [Vérification et Accès]
     
-
+8. [Explications YAML et SCRIPT]
 ---
 
 ##  Contexte et Objectifs
-
-Ce projet s'inscrit dans le cadre du bilan intermédiaire du BTS SIO (Option SISR) . Il vise à démontrer la maîtrise des compétences suivantes :
 
 - Mise en place d'un environnement virtualisé sous **Proxmox** .
     
@@ -74,13 +72,13 @@ Ce projet s'inscrit dans le cadre du bilan intermédiaire du BTS SIO (Option SIS
 
 L'infrastructure repose sur une machine virtuelle Linux unique hébergeant deux stacks applicatives isolées :
 
-1. **Stack Web (Wordpress)** :
+1. **Web (Wordpress)** :
     
     - Frontend : Wordpress (Port hôte : `8080`) .
         
     - Backend : MySQL 5.7.
         
-2. **Stack Supervision (Zabbix)** :
+2. **Supervision (Zabbix)** :
     
     - Frontend : Zabbix Web Nginx (Port hôte : `8081`) .
         
@@ -103,7 +101,7 @@ L'infrastructure repose sur une machine virtuelle Linux unique hébergeant deux 
         
     - RAM : 4 Go.
         
-    - **Stockage** : 20 Go (Recommandation suite aux tests de charge, voir section "Difficultés").
+    - **Stockage** : 20 Go.
         
 
 ---
