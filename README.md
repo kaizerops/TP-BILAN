@@ -212,7 +212,7 @@ Les services sont accessibles depuis le navigateur via l'adresse IP de la VM :
 **Accès à Zabbix :**
 <img width="1918" height="781" alt="image" src="https://github.com/user-attachments/assets/3c66643e-5eb3-4a59-8ad6-290e060d5b7f" />
 
-## Vérification et Accès
+## Explication
 ### 1. Explication Script.sh
 
 | **Ligne de commande (Extraits)**  | **Explication Simple**                                                                   |
