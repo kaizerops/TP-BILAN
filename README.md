@@ -98,7 +98,7 @@ L'infrastructure repose sur une machine virtuelle Linux unique hébergeant deux 
 
 ##  Installation Automatisée
 
-Pour garantir la reproductibilité de l'environnement, l'installation de Docker est gérée par un script Bash (`install_docker.sh`) .
+Pour garantir la reproductibilité de l'environnement, l'installation de Docker est gérée par un script Bash (`script.sh`) .
 
 ### Fonctionnement du script
 
