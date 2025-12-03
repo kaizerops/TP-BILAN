@@ -1,4 +1,3 @@
-<!-- 🌟 PAGE DE PRÉSENTATION -->
 <div style="text-align: center; margin-top: 100px;">
 
   <!-- 🖼️ Logo principal au centre -->
@@ -21,17 +20,8 @@
   </p>
 </div>
 
-<!-- 🖼️ Logo en bas à droite -->
 
 
-
-
-
-
-
-
-
-<!-- ✂️ Saut de page pour le PDF -->
 <div style="page-break-after: always;"></div>
 
 ---
