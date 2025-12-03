@@ -215,7 +215,7 @@ Les services sont accessibles depuis le navigateur via l'adresse IP de la VM :
 ## Explication
 ### 1. Explication Script.sh
 
-| **Ligne de commande (Extraits)**  | **Explication Simple**                                                                   |
+| **Ligne de commande (Extraits)**  | **Explication**                                                                   |
 | --------------------------------- | ---------------------------------------------------------------------------------------- |
 | `set -e`                          | Arrête immédiatement le script si une commande échoue.                                   |
 | `set -x`                          | Affiche chaque commande dans le terminal avant de l'exécuter.                            |
